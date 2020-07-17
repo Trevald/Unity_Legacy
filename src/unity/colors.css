@@ -1,0 +1,43 @@
+:root {
+	/* Background-colors */
+
+	--_color-background: 20, 20%, 15%;
+
+	--color-background: hsl(var(--_color-background));
+
+	/* Text */
+
+	--_color-text: 70, 80%, 80%;
+	--_color-text-emphasised: 70, 75%, 90%;
+	--_color-text-muted: 70, 45%, 50%;
+
+	--color-text: hsl(var(--_color-text));
+	--color-text-emphasised: hsl(var(--_color-text-emphasised));
+	--color-text-muted: hsl(var(--_color-text-muted));
+
+	/* Actions */
+
+	--_color-action: 210, 90%, 80%;
+	--_color-action-muted: 240, 80%, 55%;
+
+	--color-action: hsl(var(--_color-action));
+	--color-action-muted: hsl(var(--_color-action-muted));
+}
+
+/*
+On
+Off
+
+Inactive
+Active
+Disabled
+
+Good
+Worrying
+Bad
+
+Neutral 1
+Neutral 2
+Neutral 3
+
+*/

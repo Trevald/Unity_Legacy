@@ -1,0 +1,22 @@
+a:link,
+a:visited {
+	color: var(--color-action);
+	text-decoration: underline;
+}
+
+a.has-visited:visited {
+	color: var(--color-action-muted);
+	text-decoration: underline;
+}
+
+a.is-focus,
+a:focus {
+}
+
+a-hover,
+a:hover {
+}
+
+a-active,
+a:active {
+}

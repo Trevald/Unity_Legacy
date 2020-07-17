@@ -1,0 +1,6 @@
+:root {
+	--font-size: calc(var(--unit) * 2);
+	--font-line-height: calc(1.5 * 1);
+	--font-cap-height: calc(0.75 * 1);
+	--font-offset: calc(var(--font-size) * (var(--font-line-height) - var(--font-cap-height)) / 2);
+}
