@@ -1,0 +1,3 @@
+section {
+	padding: calc(var(--unit) * 8) 0;
+}

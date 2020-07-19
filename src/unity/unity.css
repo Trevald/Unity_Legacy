@@ -1,3 +1,14 @@
+/*
+ * Vendors
+ */
+
+@import "./../vendor/Inter-3-2/Inter Web/inter.css";
+@import "./../vendor/IBMPlexMono/IBMPlexMono.css";
+
+/*
+ * Custom properties
+ */
+
 @import "./variables.css";
 @import "./colors.css";
 
@@ -9,11 +20,14 @@
  */
 @import "./tags/a.css";
 @import "./tags/body.css";
+@import "./tags/h2.css";
 @import "./tags/html.css";
 @import "./tags/p.css";
+@import "./tags/section.css";
 
 @import "./dev.css";
 
 .container {
 	max-width: calc(var(--unit-fluid) * 104);
+	padding: 0 calc(var(--unit-fluid) * 8);
 }

@@ -1,8 +1,8 @@
-*:not(section):not(#app) {
+.dev *:not(#app) {
 	outline: 1px dotted lightblue;
 }
 
-body {
+.dev body {
 	background-image: linear-gradient(to bottom, hsla(55, 60%, 89%, 0.2) 1px, transparent 1px),
 		linear-gradient(to right, hsla(55, 60%, 89%, 0.2) 1px, transparent 1px),
 		linear-gradient(to bottom, hsla(55, 60%, 89%, 0.2) 1px, transparent 1px),

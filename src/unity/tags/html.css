@@ -7,6 +7,13 @@ html {
 	min-height: 100%;
 	min-width: 100%;
 
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	font-variation-settings: var(--font-variation-settings);
+	font-weight: var(--font-weight);
+	line-height: var(--font-line-height);
+	font-variant-ligatures: var(--font-variant-ligatures);
+
 	background: var(--main-bg);
 	color: var(--main-fg);
 }

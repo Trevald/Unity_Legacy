@@ -1,6 +1,39 @@
 :root {
+	--font-family: "Inter", sans-serif;
+	--font-family-var: "Inter Var", sans-serif;
 	--font-size: calc(var(--unit) * 2);
-	--font-line-height: calc(1.5 * 1);
-	--font-cap-height: calc(0.75 * 1);
-	--font-offset: calc(var(--font-size) * (var(--font-line-height) - var(--font-cap-height)) / 2);
+	--font-weight: 400;
+	--font-line-height: 1.5;
+	--font-cap-height: 0.7;
+
+	--font-family-monospace: IBMPlexMono, monaco, courier;
+
+	--font-h1-weight: 800;
+	--font-h2-weight: 200;
+	--font-h3-weight: 700;
+	--font-h4-weight: 600;
+	--font-h5-weight: 600;
+	--font-h6-weight: 600;
+}
+
+* {
+	--font-line-height-percentage: calc(var(--font-line-height) / var(--font-size));
+	--font-baseline-offset: calc(
+		calc(var(--font-size) * var(--unit)) *
+			(var(--font-line-height-percentage) - var(--font-cap-height)) / 2
+	);
+}
+
+@supports (font-variation-settings: normal) {
+	:root {
+		--font-family: var(--font-family-var);
+		--font-weight: unset;
+		--font-variation-settings: "wght" 400;
+	}
+}
+
+@supports (font-variation-ligatures: normal) {
+	:root {
+		--font-variant-ligatures: common-ligatures;
+	}
 }

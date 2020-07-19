@@ -1,10 +1,10 @@
 <template>
   <p>
-    <a
+    This is a <a
       href="#"
       :class="className"
       @click.prevent="doNothing"
-    >This is {{text}} state </a>
+    >{{text}}</a> state
   </p>
 </template>
 
@@ -25,6 +25,8 @@ export default {
           return "is-active";
         case "hover":
           return "is-hover";
+        case "muted":
+          return "is-muted";
         default:
           return "";
       }
@@ -37,6 +39,8 @@ export default {
           return "text link in active";
         case "hover":
           return "text link in hover";
+        case "muted":
+          return "text link in muted";
         default:
           return "text link in idle";
       }

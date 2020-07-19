@@ -10,4 +10,7 @@ html {
 
 .is-focus,
 *:focus {
+	outline: 1px dotted transparent;
+	outline-offset: calc(var(--unit) * 0.5);
+	outline-color: var(--color-focus-outline);
 }

@@ -1,9 +1,16 @@
+a:not(.no-style) {
+	padding: calc(var(--unit) * 0.5);
+	outline-offset: calc(var(--unit) * 0);
+	transition: all 0.2s ease;
+}
+
 a:link,
 a:visited {
 	color: var(--color-action);
 	text-decoration: underline;
 }
 
+a.is-muted,
 a.has-visited:visited {
 	color: var(--color-action-muted);
 	text-decoration: underline;
@@ -11,12 +18,15 @@ a.has-visited:visited {
 
 a.is-focus,
 a:focus {
+	color: var(--color-action-focus);
 }
 
-a-hover,
+a.is-hover,
 a:hover {
+	color: var(--color-action-hover);
 }
 
-a-active,
+a.is-active,
 a:active {
+	color: var(--color-action-active);
 }

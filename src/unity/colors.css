@@ -7,7 +7,7 @@
 
 	/* Text */
 
-	--_color-text: 70, 80%, 80%;
+	--_color-text: 70, 75%, 90%;
 	--_color-text-emphasised: 70, 75%, 90%;
 	--_color-text-muted: 70, 45%, 50%;
 
@@ -17,11 +17,19 @@
 
 	/* Actions */
 
-	--_color-action: 210, 90%, 80%;
-	--_color-action-muted: 240, 80%, 55%;
+	--_color-action: 199, 94%, 67%;
+	--_color-action-hover: 199, 94%, 85%;
+	--_color-action-focus: var(--_color-action-hover);
+	--_color-action-active: 199, 80%, 60%;
+	--_color-action-muted: var(--_color-action-active);
+	--_color-focus-outline: var(--_color-action-focus);
 
 	--color-action: hsl(var(--_color-action));
+	--color-action-hover: hsl(var(--_color-action-hover));
+	--color-action-focus: hsl(var(--_color-action-focus));
+	--color-action-active: hsl(var(--_color-action-active));
 	--color-action-muted: hsl(var(--_color-action-muted));
+	--color-focus-outline: hsla(var(--_color-focus-outline), 0.8);
 }
 
 /*
