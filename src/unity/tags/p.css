@@ -6,17 +6,11 @@ p {
 p {
 	--font-size: 2.25;
 	--font-line-height: 4;
-	--font-line-height-percentage: calc(var(--font-line-height) / var(--font-size));
-	--font-baseline-offset: calc(
-		calc(var(--font-size) * var(--unit)) *
-			(var(--font-line-height-percentage) - var(--font-cap-height)) / 2
-	);
+
+	font-variation-settings: "wght" 350;
 
 	padding-top: var(--font-baseline-offset);
 	padding-right: var(--unit);
 	padding-bottom: calc(var(--unit) * 2 - var(--font-baseline-offset));
 	padding-left: var(--unit);
-	font-size: calc(var(--font-size) * var(--unit));
-	line-height: calc(var(--font-line-height) * var(--unit));
-	font-variation-settings: "wght" 350;
 }

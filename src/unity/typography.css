@@ -9,19 +9,41 @@
 	--font-family-monospace: IBMPlexMono, monaco, courier;
 
 	--font-h1-weight: 800;
-	--font-h2-weight: 200;
+	--font-h2-weight: 700;
 	--font-h3-weight: 700;
 	--font-h4-weight: 600;
 	--font-h5-weight: 600;
 	--font-h6-weight: 600;
+
+	--font-h1-alt-weight: 150;
+	--font-h2-alt-weight: 200;
+	--font-h3-alt-weight: 200;
+	--font-h4-alt-weight: 250;
+	--font-h5-alt-weight: 250;
+	--font-h6-alt-weight: 600;
 }
 
-* {
+blockquote,
+dd,
+dt,
+figcaption,
+pre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
 	--font-line-height-percentage: calc(var(--font-line-height) / var(--font-size));
 	--font-baseline-offset: calc(
 		calc(var(--font-size) * var(--unit)) *
 			(var(--font-line-height-percentage) - var(--font-cap-height)) / 2
 	);
+
+	font-size: calc(var(--font-size) * var(--unit));
+	line-height: calc(var(--font-line-height) * var(--unit));
 }
 
 @supports (font-variation-settings: normal) {

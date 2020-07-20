@@ -20,14 +20,21 @@
  */
 @import "./tags/a.css";
 @import "./tags/body.css";
-@import "./tags/h2.css";
+@import "./tags/h1-h6.css";
 @import "./tags/html.css";
 @import "./tags/p.css";
 @import "./tags/section.css";
 
-@import "./dev.css";
+/* @import "./dev.css"; */
 
 .container {
-	max-width: calc(var(--unit-fluid) * 104);
-	padding: 0 calc(var(--unit-fluid) * 8);
+	max-width: calc(var(--unit-fluid) * 10400);
+	margin: 0 auto;
+	padding: 0 calc(var(--unit-fluid) * 4);
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		padding: 0 calc(var(--unit-fluid) * 1);
+	}
 }

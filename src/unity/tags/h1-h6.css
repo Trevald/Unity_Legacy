@@ -1,0 +1,147 @@
+h1 {
+	--font-size: 7;
+	--font-line-height: 8;
+
+	margin: calc(var(--unit) * 2) 0 calc(var(--unit) * 3) 0;
+	--font-weight: var(--font-h1-weight);
+}
+
+h1.alternative {
+	--font-weight: var(--font-h1-alt-weight);
+}
+
+h2 {
+	--font-size: 5;
+	--font-line-height: 6;
+	--font-weight: var(--font-h2-weight);
+
+	margin: calc(var(--unit) * 2) 0 calc(var(--unit) * 3) 0;
+}
+
+h2.alternative {
+	--font-weight: var(--font-h2-alt-weight);
+}
+
+h3 {
+	--font-size: 4;
+	--font-line-height: 5;
+
+	margin: calc(var(--unit) * 2) 0 calc(var(--unit) * 2) 0;
+	--font-weight: var(--font-h3-weight);
+}
+
+h3.alternative {
+	--font-weight: var(--font-h3-alt-weight);
+}
+
+h4 {
+	--font-size: 3;
+	--font-line-height: 4;
+
+	margin: calc(var(--unit) * 2) 0 calc(var(--unit) * 1) 0;
+	--font-weight: var(--font-h2-weight);
+}
+
+h4.alternative {
+	--font-weight: var(--font-h4-alt-weight);
+}
+
+h5 {
+	--font-size: 2.5;
+	--font-line-height: 4;
+
+	margin: calc(var(--unit) * 1) 0 calc(var(--unit) * 1) 0;
+	--font-weight: var(--font-h5-weight);
+}
+
+h5.alternative {
+	--font-weight: var(--font-h5-alt-weight);
+}
+
+h6 {
+	--font-size: 1.75;
+	--font-line-height: 4;
+
+	margin: 0 0 calc(var(--unit) * 1) 0;
+	--font-weight: var(--font-h5-weight);
+	text-transform: uppercase;
+}
+
+h6.alternative {
+	--font-weight: var(--font-h6-alt-weight);
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		--font-size: 4;
+		--font-line-height: 5;
+
+		margin: calc(var(--unit) * 1) 0 calc(var(--unit) * 2) 0;
+	}
+
+	h2 {
+		--font-size: 3.5;
+		--font-line-height: 4;
+
+		margin: calc(var(--unit) * 1) 0 calc(var(--unit) * 1) 0;
+	}
+
+	h3 {
+		--font-size: 2.75;
+		--font-line-height: 4;
+
+		margin: calc(var(--unit) * 1) 0 calc(var(--unit) * 1) 0;
+	}
+
+	h4 {
+		--font-size: 2.5;
+		--font-line-height: 4;
+	}
+
+	h5 {
+		--font-size: 1.75;
+		--font-line-height: 4;
+
+		text-transform: uppercase;
+	}
+
+	h6 {
+		--font-size: 1.5;
+		--font-line-height: 3;
+
+		text-transform: uppercase;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: var(--font-weight);
+}
+
+@supports (font-variation-settings: normal) {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: unset;
+		font-variation-settings: "wght" var(--font-weight);
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding-top: var(--font-baseline-offset);
+	padding-right: var(--unit);
+	padding-bottom: calc(var(--unit) * 2 - var(--font-baseline-offset));
+	padding-left: var(--unit);
+}

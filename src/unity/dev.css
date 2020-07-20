@@ -1,4 +1,4 @@
-.dev *:not(#app) {
+.dev *:not(#app):not(div) {
 	outline: 1px dotted lightblue;
 }
 

@@ -2,7 +2,7 @@
   <div id="app">
     <section>
       <div class="container">
-        <h2>&lt;a&gt;: The Anchor element</h2>
+        <h2 class="alternative">&lt;a&gt; <em>The Anchor element</em></h2>
         <A />
         <A state="hover" />
         <A state="focus" />
@@ -10,16 +10,24 @@
         <A state="muted" />
       </div>
     </section>
+    <section>
+      <div class="container">
+        <h2 class="alternative">&lt;h1&gt; - &lt;h6&gt; <em>The Headings</em></h2>
+        <H2 />
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 import A from "./components/tags/A";
+import H2 from "./components/tags/H2";
 
 export default {
   name: "App",
   components: {
-    A
+    A,
+    H2
   }
 };
 </script>

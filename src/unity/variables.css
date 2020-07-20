@@ -1,5 +1,15 @@
 :root {
+	/* 
+     * Unit
+     */
+
 	--unit: 0.5rem;
 	--unit-fluid: min(0.625vw, var(--unit));
 	--unit-fluid: var(--unit);
+
+	/*
+     * Breakpoints
+     */
+
+	--breakpoint-small: 600px;
 }
