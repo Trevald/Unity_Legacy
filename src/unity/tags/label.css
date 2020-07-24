@@ -1,0 +1,4 @@
+label {
+	padding: var(--unit-y) var(--unit-x);
+	--font-weight: var(--font-h4-weight);
+}

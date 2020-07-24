@@ -1,0 +1,6 @@
+input {
+	padding: var(--unit-y) var(--unit-x);
+}
+
+input:not(:checkbox):not(:radio) {
+}

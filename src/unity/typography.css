@@ -44,6 +44,7 @@ li {
 
 	font-size: calc(var(--font-size) * var(--unit));
 	line-height: calc(var(--font-line-height) * var(--unit));
+	font-weight: var(--font-weight);
 }
 
 @supports (font-variation-settings: normal) {
@@ -51,6 +52,22 @@ li {
 		--font-family: var(--font-family-var);
 		--font-weight: unset;
 		--font-variation-settings: "wght" 400;
+	}
+
+	blockquote,
+	dd,
+	dt,
+	figcaption,
+	pre,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	li {
+		--font-variation-settings: "wght" var(--font-weight);
 	}
 }
 

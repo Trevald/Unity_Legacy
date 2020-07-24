@@ -7,9 +7,19 @@
 	--unit-fluid: min(0.625vw, var(--unit));
 	--unit-fluid: var(--unit);
 
-	/*
-     * Breakpoints
-     */
+	--unit-x: var(--unit);
+	--unit-y: var(--unit);
+}
 
-	--breakpoint-small: 600px;
+@media screen and (min-width: 600px) {
+	:root {
+		--unit-x: calc(var(--unit) * 2);
+	}
+}
+
+@media screen and (min-width: 960px) {
+	:root {
+		--unit-x: calc(var(--unit) * 3);
+		--unit-y: calc(var(--unit) * 2);
+	}
 }

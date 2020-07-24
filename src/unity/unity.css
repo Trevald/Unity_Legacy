@@ -22,10 +22,12 @@
 @import "./tags/body.css";
 @import "./tags/h1-h6.css";
 @import "./tags/html.css";
+@import "./tags/input.css";
+@import "./tags/label.css";
 @import "./tags/p.css";
 @import "./tags/section.css";
 
-/* @import "./dev.css"; */
+@import "./dev.css";
 
 .container {
 	max-width: calc(var(--unit-fluid) * 10400);
